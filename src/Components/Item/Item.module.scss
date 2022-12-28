@@ -1,0 +1,71 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+  .details {
+    display: flex;
+    .item_image {
+      width: 5rem;
+      border-radius: 4px;
+    }
+    .info {
+      padding-left: 1rem;
+      padding-top: 0.5rem;
+      span,
+      label {
+        display: block;
+        line-height: 1.25;
+        font-size: 13px;
+      }
+      .name {
+        font-weight: 700;
+        font-size: 16px;
+        padding-bottom: 0.5rem;
+      }
+      .description {
+        inline-size: 37rem;
+        overflow-wrap: break-word;
+      }
+
+      .description,
+      .locPane label {
+        color: #495057;
+      }
+
+      .locPane {
+        display: flex;
+        .location {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .qtyNAction {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding-top: 1rem;
+    .qtyPane {
+      text-align: center;
+      font-size: 13px;
+      .quantity {
+        display: block;
+        font-weight: 700;
+      }
+    }
+    .addToList {
+      span {
+        border: 1px solid aqua;
+        font-size: 13px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        background-color: lightblue;
+        color: darkblue;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+}

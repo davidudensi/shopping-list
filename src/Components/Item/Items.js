@@ -1,8 +1,9 @@
 import Item from "./Item";
+import styles from "./Items.module.scss"
 
 const Items = ({ list, onAddToList }) => {
   return (
-    <div>
+    <div className={styles.items}>
       {list &&
         list.map((item) => (
           <Item key={item.id} item={item} onAddToList={onAddToList} />

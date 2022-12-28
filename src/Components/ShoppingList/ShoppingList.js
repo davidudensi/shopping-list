@@ -1,8 +1,9 @@
 import ShoppingItem from "./ShoppingItem";
+import styles from "./ShoppingList.module.scss"
 
 const ShoppingList = ({ items, onAdjustQuantity, onRemoveItem }) => {
   return items !== null ? (
-    <div>
+    <div className={styles.shoppingList}>
       {items.map((item) => (
         <ShoppingItem
           key={item.id}

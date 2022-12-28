@@ -1,11 +1,12 @@
-import navs from "../../Data/BaseNavs";
+import navs from "../../Data/baseNavs";
 import Navbar from "../Navs/Navbar";
+import styles from "./BaseLayout.module.scss";
 
 const BaseLayout = ({ children }) => {
   return (
-    <div>
+    <div className={styles.baseLayout}>
       <Navbar navs={navs} />
-      {children}
+      <div className={styles.children}>{children}</div>
     </div>
   );
 };
