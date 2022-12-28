@@ -1,0 +1,15 @@
+.home {
+    padding: 1rem 2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    .item, .list {
+        padding: 0 2rem;
+    }
+    .items {
+        width: 65%;
+    }
+    .list {
+        width: 30%;
+    }
+}

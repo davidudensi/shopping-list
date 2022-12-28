@@ -7,6 +7,10 @@ const navs = [
         to: "/create",
         text: "Create List"
     },
+    {
+        to: "/utilize",
+        text: "Utilize"
+    },
 ]
 
 export default navs;

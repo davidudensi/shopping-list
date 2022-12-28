@@ -33,11 +33,11 @@ const CreateList = () => {
     setShoppingList({ ...shoppingList, items: newItems });
   };
 
-  const handleRemoveItem =(id)=>{
+  const handleRemoveItem = (id) => {
     let newItems = shoppingList.items;
-    newItems = newItems.filter((item) => item.id !== id)
+    newItems = newItems.filter((item) => item.id !== id);
     setShoppingList({ ...shoppingList, items: newItems });
-  }
+  };
 
   return (
     <Fragment>
